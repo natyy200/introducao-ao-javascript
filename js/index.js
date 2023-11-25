@@ -3,13 +3,22 @@ let titulo = document.querySelector('.titulo');
 
 titulo.textContent = "Em forma!"
 
-let lista = document.querySelectorAll('.info-nome');
-let paciente =[];
+let paciente = document.querySelectorAll('.info-nome');
+let nor =[];
+let wei = [];
+let peso  = document.querySelectorAll('.info-peso');
+for(i=0 ; i<paciente.length ; i++){
+    nor.push(paciente[i].textContent)
+    wei.push(peso[i].textContent)
 
-for(i = 0 ; i< lista.length ; i++){
-    
- paciente.push(lista[i].textContent)
 }
+    
+    
 
-console.log(paciente)
+
+console.log( nor , wei)
+
+
+
+
 
